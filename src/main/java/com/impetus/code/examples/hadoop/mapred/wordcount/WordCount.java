@@ -50,6 +50,7 @@ public class WordCount
         FileInputFormat.setInputPaths(conf, new Path(args[0]));
         FileOutputFormat.setOutputPath(conf, new Path(args[1]));
 
-        JobClient.runJob(conf);
+        JobClient.runJob(conf);       
+        
     }
 }
